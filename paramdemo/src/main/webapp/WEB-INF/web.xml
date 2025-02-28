@@ -1,0 +1,25 @@
+<web-app>
+	<servlet>
+			<init-param>+
+				<param-name>username</param-name>
+				<param-value>system</param-value>
+			</init-param>
+			<init-param>
+				<param-name>password</param-name>
+				<param-value>system@123</param-value>
+			</init-param>
+		<servlet-name>servlet1</servlet-name>
+		<servlet-class>ParamDemo</servlet-class>
+	</servlet>
+	
+	<context-param>
+		<param-name>context_param</param-name>
+		<param-value>VVIT</param-value>
+	</context-param>
+	
+	<servlet-mapping>
+		<servlet-name>servlet1</servlet-name>
+		<url-pattern>/paramdemo</url-pattern>
+	</servlet-mapping>
+
+</web-app>

@@ -1,0 +1,26 @@
+<web-app>
+	<servlet>
+			<init-param>
+				<param-name>a</param-name>
+				<param-value>10</param-value>
+			</init-param>
+			
+			<init-param>
+				<param-name>b</param-name>
+				<param-value>20</param-value>
+			</init-param>
+			
+		<servlet-name>demo</servlet-name>
+		<servlet-class>ParamDemo</servlet-class>	
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>demo</servlet-name>
+		<url-pattern>/param</url-pattern>
+	</servlet-mapping>
+	
+	<context-param>
+			<param-name>context_param</param-name>
+			<param-value>HelloWorld</param-value>
+	</context-param>
+	
+</web-app>

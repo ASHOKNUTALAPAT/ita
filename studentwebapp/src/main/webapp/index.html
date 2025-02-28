@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Iframe Layout</title>
+    <style>
+        body { margin: 0; display: flex; height: 100vh; }
+        #menu { width: 20%; background: #333; color: white; padding: 10px; }
+        #content { flex-grow: 1; border: none; }
+    </style>
+</head>
+<body>
+    <div id="menu">
+        <h3>Menu</h3>
+        <h4><a href="home.html" target="contentFrame">HOME</a></h4>
+        <h4><a href="student_add.html" target="contentFrame">ADD</a></h4>
+        <h4><a href="student_update.html" target="contentFrame">UPDATE</a></h4>
+        <h4><a href="Servlet2" target="contentFrame">DISPLAY</a></h4>
+    </div>
+    <iframe id="content" name="contentFrame" src="home.html"></iframe>
+</body>
+</html>
